@@ -2,8 +2,8 @@ from tkinter import *
 root=Tk()
 
 def click(event):
-    global scvalue         #so that we can change the scvalue ...
-    text=event.widget.cget("text")           #cget..string me convert krta h aur ye sb screen me print hoga abhi..
+    global scvalue                                #so that we can change the scvalue ...
+    text=event.widget.cget("text")         
     print(text)
     if text =="=":
         if scvalue.get().isdigit():
@@ -46,7 +46,7 @@ b1.bind('<Button-1>',click)
 b1=Button(f,text="+",fg="black",bg="pink",font="lucida 20 bold",padx=5,pady=5)
 b1.pack(side=LEFT,padx=6,pady=6)
 b1.bind('<Button-1>',click)
-f.pack()                        #akele likhe kyuki button sara neeche show ho rha tha ....
+f.pack()                      
 
 
 f=Frame(root,bg="grey")
@@ -62,7 +62,7 @@ b1.bind('<Button-1>',click)
 b1=Button(f,text="-",fg="black",bg="pink",font="lucida 20 bold",padx=5,pady=5)
 b1.pack(side=LEFT,padx=5,pady=5)
 b1.bind('<Button-1>',click)
-f.pack()                        #akele likhe kyuki button sara neeche show ho rha tha ....
+f.pack()                       
 
 f=Frame(root,bg="grey")
 b1=Button(f,text="1",fg="black",bg="pink",font="lucida 20 bold",padx=5,pady=5)
@@ -77,7 +77,7 @@ b1.bind('<Button-1>',click)
 b1=Button(f,text="*",fg="black",bg="pink",font="lucida 20 bold",padx=5,pady=5)
 b1.pack(side=LEFT,padx=6,pady=6)
 b1.bind('<Button-1>',click)
-f.pack()                        #akele likhe kyuki button sara neeche show ho rha tha ....
+f.pack()  
 
 f=Frame(root,bg="grey")
 b1=Button(f,text="C",fg="black",bg="pink",font="lucida 20 bold",padx=5,pady=5)
@@ -92,8 +92,7 @@ b1.bind('<Button-1>',click)
 b1=Button(f,text="/",fg="black",bg="pink",font="lucida 20 bold",padx=5,pady=5)
 b1.pack(side=LEFT,padx=7,pady=6)
 b1.bind('<Button-1>',click)
-f.pack()                        #akele likhe kyuki button sara neeche show ho rha tha ....
-
+f.pack()                        
 
 
 root.mainloop()
